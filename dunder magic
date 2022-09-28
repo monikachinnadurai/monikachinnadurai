@@ -1,0 +1,37 @@
+Class Num:
+	def __init__(self,inte):
+		self.inte=inte
+	def __str__(self):
+		return self.inte
+		
+	def __repr__(self):
+		return self.inte
+			
+	def __add__(self,other):
+		return self.inte+other.inte
+		
+	def __len__(self):
+		return len(self.inte)
+		
+	def __eq__(self,other):
+		return self.inte==other.inte
+		
+	def __getitem__(self,key):
+		return self.inte[key]
+		
+	def __contains__(self,other):
+		if other in self.inte:
+			return True
+		return False
+		
+		
+a=Num(6)
+b=Num(6)
+c = Num('Sathyabama')
+print(a+b)
+print(a==b)
+print(c[0:4])
+print("S" in c)
+print(c)
+print([c])
+print(len(c))
